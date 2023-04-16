@@ -10,8 +10,8 @@ def hello():
 
 @app.route('/echo/<name>')
 def echo(name):
-    print(f"This was placed in the url: new-{name}")
-    val = {"new-name": name}
+    print(f"This was placed in the url: new-{name}-CD")
+    val = {"new-name": name, "new-version": true}
     return jsonify(val)
 
 
